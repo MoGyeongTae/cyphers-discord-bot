@@ -1,4 +1,5 @@
-const Discord = require('discord.js');
+import Discord from 'discord.js'
+import config from './config';
 const client = new Discord.Client(); 
 
 client.on("ready", () => { 
@@ -12,4 +13,4 @@ client.on("message", msg => {
     }
 });
 
-client.login("토큰"); 
+client.login(config.botToken); 
