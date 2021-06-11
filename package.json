@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "12.5.3"
+    "axios": "0.21.1",
+    "discord.js": "12.5.3",
+    "discord.js-commando": "0.12.3"
   }
 }

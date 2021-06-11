@@ -1,4 +1,4 @@
-import Discord from 'discord.js'
+const Discord = require('discord.js');
 const client = new Discord.Client(); 
 
 client.on("ready", () => { 
@@ -6,9 +6,10 @@ client.on("ready", () => {
 });
 
 client.on("message", msg => {
-    if (msg.content === "핑") {
-        msg.reply("퐁!"); 
+    
+    if (msg.content === "!테스트") {
+        msg.reply("하이!"); 
     }
 });
 
-client.login("ODUyNTM1NzQ5OTQxMTMzMzE0.YMIPyg.HvVGrMlokrWrK-M0D2MX2_N2U2c"); 
+client.login("토큰"); 
