@@ -11,7 +11,7 @@ client.on("message", async (msg) => {
 
     const commandList = msg.content.split(' ');
     
-    if (commandList[0] === "!전적검색") {
+    if (commandList[0] === "!정보") {
         if(!commandList[1]) {
             msg.reply("닉네임을 제대로 입력해주세요!");
         }
