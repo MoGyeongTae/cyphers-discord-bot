@@ -1,6 +1,7 @@
 import Discord from 'discord.js'
 import config from './config';
 import getPlayer from './Cyphers/GetPlayer';
+import getPlayerRanking from './Cyphers/GetPlayerRanking';
 const client = new Discord.Client(); 
 
 client.on("ready", () => { 
@@ -16,6 +17,10 @@ client.on("message", async (msg) => {
             msg.reply("닉네임을 제대로 입력해주세요!");
         }
         getPlayer(commandList[1], msg);
+    }
+
+    if(commandList[0] === "!통랭") {
+        getPlayerRanking(msg);
     }
 });
 

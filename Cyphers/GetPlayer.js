@@ -60,7 +60,6 @@ const getPlayer = async (nickname, discordMessage) => {
         **${playerData.clanName || '클랜 없음'}**
         > 티어
         **${playerData.tierName || "언랭딱"}(현 : ${playerData.ratingPoint || 0}점) (탑레 : ${playerData.maxRatingPoint || 0}점)**
-
         > 공식전 전적
         **${rankInfo.winCount}승 ${rankInfo.loseCount}패 ${rankInfo.stopCount}중단 승률 ${rankWinRate}%**
         > 일반전 전적
