@@ -10,8 +10,17 @@ const getPlayerRanking = async (discordMessage) => {
 
   const res = await axios.get(getPlayerRankingUrl);
 
+  let replyText = `
+  `
+
   if(res.data) {
-    discordMessage.reply();
+    res.data.rows.forEach((data) => {
+      replyText += `
+        > 닉네임
+        **${data.nickname}**
+      `
+    })
+    discordMessage.reply(replyText);
   }
 }
 
