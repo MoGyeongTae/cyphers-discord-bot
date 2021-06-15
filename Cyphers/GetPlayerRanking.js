@@ -14,10 +14,11 @@ const getPlayerRanking = async (discordMessage) => {
   `
 
   if(res.data) {
+    console.log(res.data);
     res.data.rows.forEach((data) => {
       replyText += `
-        > 닉네임
-        **${data.nickname}**
+        > ${data.rank}등
+        **${data.nickname}** / **${data.ratingPoint}점** / **${data.grade}급** / **${data.clanName}**
       `
     })
     discordMessage.reply(replyText);
